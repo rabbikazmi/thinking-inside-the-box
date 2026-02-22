@@ -4,6 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: url('./assets/icons8-hand-cursor-32.png'), auto !important;
+}
+
+body:active {
+  cursor: url('./assets/icons8-hand-cursor-32.png'), grabbing !important;
+}
+
+a, button, [role="button"] {
+  cursor: url('./assets/icons8-hand-cursor-32.png'), pointer !important;
 }
 
 body {

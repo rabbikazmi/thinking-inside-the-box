@@ -30,6 +30,49 @@ function App() {
   useEffect(() => {
     window.addEventListener('resize', calcValues);
     calcValues();
+
+    // Drag to scroll functionality
+    let isDown = false;
+    let startY;
+    let scrollTop;
+
+    const handleMouseDown = (e) => {
+      // Don't interfere with link clicks
+      if (e.target.tagName === 'A') return;
+      
+      isDown = true;
+      startY = e.clientY;
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      document.body.style.cursor = 'url("./assets/icons8-hand-cursor-32.png"), grabbing';
+    };
+
+    const handleMouseMove = (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const y = e.clientY;
+      const walk = (startY - y) * 1.5; // Scroll multiplier
+      window.scrollTo({
+        top: scrollTop + walk,
+        behavior: 'auto'
+      });
+    };
+
+    const handleMouseUp = () => {
+      if (isDown) {
+        isDown = false;
+        document.body.style.cursor = '';
+      }
+    };
+
+    document.addEventListener('mousedown', handleMouseDown);
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+
+    return () => {
+      document.removeEventListener('mousedown', handleMouseDown);
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+    };
   }, []);
 
   return (
