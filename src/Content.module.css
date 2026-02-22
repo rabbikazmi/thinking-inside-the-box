@@ -1,0 +1,182 @@
+/* Hero Section - Full screen blue background with name */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background: #1700c7;
+  padding: 60px;
+  margin: 0;
+}
+
+.heroTitle {
+  font-size: clamp(3rem, 12vw, 8rem);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+/* Content sections with blue background */
+.printPage {
+  position: relative;
+  background: #1700c7;
+}
+
+.printContent {
+  position: relative;
+  background: #1700c7;
+}
+
+.container {
+  background: #1700c7;
+  color: white;
+  padding: 0 60px 60px 60px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+  font-size: 1.125rem;
+}
+
+.intro {
+  margin-bottom: 60px;
+}
+
+.intro ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.intro li {
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: white;
+  font-weight: 500;
+}
+
+.intro a {
+  color: white;
+  text-decoration: underline;
+}
+
+.intro a:hover {
+  opacity: 0.7;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 40px;
+  text-transform: none;
+  color: white;
+}
+
+section hr {
+  border: none;
+  border-top: 1px solid white;
+  margin: 8px 0 20px 0;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+section sup {
+  font-size: 1rem;
+  margin-right: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+section a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+section a:hover {
+  opacity: 0.7;
+}
+
+section i {
+  font-style: italic;
+}
+
+.tight li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    padding: 30px 20px;
+    align-items: center;
+  }
+
+  .heroTitle {
+    font-size: clamp(2rem, 15vw, 4rem);
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.printBackgroundImage {
+  display: none;
+  width: 100%;
+}
+
+@media print {
+  .printPage {
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .printBackgroundImage {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+    object-position: top center;
+    z-index: 0;
+  }
+
+  .printContent {
+    display: none;
+  }
+}
