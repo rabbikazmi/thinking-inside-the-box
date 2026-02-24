@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import Content from './Content';
 import styles from './App.module.css';
@@ -27,9 +27,16 @@ function calcValues() {
 }
 
 function App() {
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+
   useEffect(() => {
     window.addEventListener('resize', calcValues);
     calcValues();
+
+    // Custom cursor tracking
+    const handleCursorMove = (e) => {
+      setCursorPos({ x: e.clientX, y: e.clientY });
+    };
 
     // Drag to scroll functionality
     let isDown = false;
@@ -43,7 +50,6 @@ function App() {
       isDown = true;
       startY = e.clientY;
       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      document.body.style.cursor = 'url("./assets/icons8-hand-cursor-32.png"), grabbing';
     };
 
     const handleMouseMove = (e) => {
@@ -60,15 +66,16 @@ function App() {
     const handleMouseUp = () => {
       if (isDown) {
         isDown = false;
-        document.body.style.cursor = '';
       }
     };
 
+    document.addEventListener('mousemove', handleCursorMove);
     document.addEventListener('mousedown', handleMouseDown);
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', handleMouseUp);
 
     return () => {
+      document.removeEventListener('mousemove', handleCursorMove);
       document.removeEventListener('mousedown', handleMouseDown);
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
@@ -77,6 +84,16 @@ function App() {
 
   return (
     <div className={styles.all}>
+      <div 
+        className={styles.handCursor} 
+        style={{ left: `${cursorPos.x}px`, top: `${cursorPos.y}px` }}
+      />
+      <div 
+        className={styles.customCursor} 
+        style={{ left: `${cursorPos.x}px`, top: `${cursorPos.y}px` }}
+      >
+        <span className={styles.cursorLabel}>you</span>
+      </div>
       <div className={styles.wrapper3d}>
         <div className={`${styles.fold} ${styles.foldTop}`}>
           <div className={styles.foldAlign}>

@@ -8,6 +8,7 @@
   width: 100%;
   height: 100vh;
   background: #1700c7;
+  cursor: none;
 }
 
 .wrapper3d {
@@ -79,6 +80,42 @@
   }
 }
 
+/* Custom Cursor */
+.handCursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  width: 32px;
+  height: 32px;
+  background-image: url('./assets/icons8-pixel-star-80.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-16px, -16px);
+}
+
+.customCursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(10px, 15px);
+}
+
+.cursorLabel {
+  display: inline-block;
+  background: #1700c7;
+  color: white;
+  padding: 6px 12px;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  text-transform: lowercase;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
 @media print {
   .all {
     position: static;
@@ -87,6 +124,7 @@
     height: auto;
     align-items: normal;
     justify-content: normal;
+    cursor: auto;
   }
 
   .wrapper3d {
@@ -107,5 +145,10 @@
 
   [data-fold-content='true'] {
     transform: none !important;
+  }
+
+  .customCursor,
+  .handCursor {
+    display: none;
   }
 }

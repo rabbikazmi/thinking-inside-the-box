@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url('./assets/icons8-hand-cursor-32.png'), auto !important;
+  cursor: none !important;
 }
 
 body:active {
-  cursor: url('./assets/icons8-hand-cursor-32.png'), grabbing !important;
+  cursor: none !important;
 }
 
 a, button, [role="button"] {
-  cursor: url('./assets/icons8-hand-cursor-32.png'), pointer !important;
+  cursor: none !important;
 }
 
 body {
