@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7aa1f017.css",
+    "main.js": "/static/js/main.bc055f59.js",
+    "static/media/star-removebg-preview.png": "/static/media/star-removebg-preview.41b06a0531e734c6afc1.png",
+    "index.html": "/index.html",
+    "main.7aa1f017.css.map": "/static/css/main.7aa1f017.css.map",
+    "main.bc055f59.js.map": "/static/js/main.bc055f59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7aa1f017.css",
+    "static/js/main.bc055f59.js"
+  ]
+}
