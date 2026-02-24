@@ -28,7 +28,7 @@ function Content() {
                     </a>
                   </div>
                   <div className={styles.projectDesc}>
-                    YOLOv8-powered web app that detects safety gear in real-time from images or live camera. Multilingual support + TTS alerts.
+                    A real-time web app leveraging YOLOv8 to detect PPE from live feeds or uploaded images, featuring a multilingual UI and spoken audio alerts.
                   </div>
                   <div className={styles.projectFocus}>
                     Focus: custom model training · full-stack development · real-time inference
@@ -42,7 +42,7 @@ function Content() {
                     </a>
                   </div>
                   <div className={styles.projectDesc}>
-                    An autonomous agent that physically navigates a 3D environment to answer visual questions using deep RL + YOLOv8.
+                    An autonomous agent that physically navigates a 3D environment to answer visual questions using deep Reinforcement Learning and YOLOv8.
                   </div>
                   <div className={styles.projectFocus}>
                     Focus: embodied AI · reinforcement learning · computer vision
@@ -56,7 +56,7 @@ function Content() {
                     </a>
                   </div>
                   <div className={styles.projectDesc}>
-                    Point your camera at your fridge, get a recipe. YOLOv11 detects ingredients, Gemini API suggests dishes.
+                    AI-powered web app that turns a photo of your fridge into a full recipe. A custom-trained YOLOv11 model detects your ingredients, and Gemini API serves up smart dish suggestions, helping you cook smarter and waste less.
                   </div>
                   <div className={styles.projectFocus}>
                     Focus: computer vision · API integration · user experience design
@@ -70,7 +70,7 @@ function Content() {
                     </a>
                   </div>
                   <div className={styles.projectDesc}>
-                    webOS-inspired portfolio with draggable windows, Spotify playlist, and a hidden easter egg.
+                    Built as my very first project, this WebOS-inspired portfolio brings draggable windows, a Spotify playlist, and a hidden easter egg to life.
                   </div>
                   <div className={styles.projectFocus}>
                     Focus: creative UI · web development · interactive design
@@ -86,16 +86,16 @@ function Content() {
             <article>
               <ul className={styles.tight}>
                 <li>
-                  <sup>[Year]</sup>
-                  [Company Name], [Location] — <i>[Your Role]</i>
+                  <sup>2026</sup>
+                  Institute of System Studies & Analysis, (DRDO), New Delhi, India — <i>AI/ML Intern</i>
                 </li>
                 <li>
-                  <sup>[Year]</sup>
-                  [Company Name], [Location] — <i>[Your Role]</i>
+                  <sup>2025</sup>
+                  Sansoftech Services Pvt. Ltd., New Delhi, India — <i>Gen AI & Computer Vision Intern</i>
                 </li>
                 <li>
-                  <sup>[Year]</sup>
-                  [Company Name], [Location] — <i>[Your Role]</i>
+                  <sup>2024</sup>
+                  ACM Student Chapter, IGDTUW, New Delhi, India — <i>Research Intern</i>
                 </li>
               </ul>
             </article>
@@ -107,18 +107,15 @@ function Content() {
             <article>
               <ul>
                 <li>
-                  <sup>[Year]</sup>
-                  <a href="[publication-url]" target="_blank" rel="noopener noreferrer">
-                    [Publication or Research Title]
+                  <sup>2025</sup>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Adversarial Attacks on Autonomous Vehicles : A Comprehensive Review
                   </a>{' '}
-                  — [Brief description]
+                  — Presented at ICAIT 2025; accepted for publication in GRENZE International Journal of Engineering and Technology (Scopus-indexed). Co-authored and presented a review paper synthesizing insights from 23+ research papers. Analyzed and categorized adversarial techniques and mapped them to real-world vulnerabilities in perception pipelines. [Link: TBA]
                 </li>
-                <li>
-                  <sup>[Year]</sup>
-                  <a href="[publication-url]" target="_blank" rel="noopener noreferrer">
-                    [Publication or Research Title]
-                  </a>{' '}
-                  — [Brief description]
+                <li className={styles.projectFocus}>
+                  <img src={starIcon} alt="" className={styles.starIcon} />
+                  More publications and research contributions coming soon.
                 </li>
               </ul>
             </article>
@@ -130,18 +127,32 @@ function Content() {
             <article>
               <ul className={styles.tight}>
                 <li>
-                  <sup>[Year]</sup>
-                  [Degree], [University/Institution]
+                  <sup>2028</sup>
+                  B.Tech in Information Technology, IGDTUW, New Delhi, India
                 </li>
                 <li>
-                  <sup>[Year]</sup>
-                  [Degree/Certificate], [University/Institution]
+                  <sup>2023</sup>
+                  Higher Secondary Education (12th), Jamia Girls Sr. Sec. School, New Delhi, India
+                </li>
+              </ul>
+            </article>
+          </section>
+
+          <section>
+            <h2>Things I like</h2>
+            <hr />
+            <article>
+              <ul>
+                <li>
+                  Manga pages, museum halls, evening strolls and ramen bowls (luv). I find joy in anime, classic books, art and Genshin Impact(yes, really), while endlessly exploring new places, new tech and everything in between. Curiosity is kind of my thing.
                 </li>
               </ul>
             </article>
           </section>
 
           <section className={styles.contactSection}>
+            <h2>Get in Touch</h2>
+            <hr />
             <div className={styles.contactIcons}>
               <a href="mailto:azmirabbika@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.contactIcon}>
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
