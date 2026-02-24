@@ -50,6 +50,8 @@ function App() {
       isDown = true;
       startY = e.clientY;
       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      document.body.style.userSelect = 'none';
+      e.preventDefault();
     };
 
     const handleMouseMove = (e) => {
@@ -66,6 +68,7 @@ function App() {
     const handleMouseUp = () => {
       if (isDown) {
         isDown = false;
+        document.body.style.userSelect = '';
       }
     };
 
