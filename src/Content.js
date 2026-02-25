@@ -144,7 +144,7 @@ function Content() {
             <article>
               <ul>
                 <li>
-                  Manga pages, museum halls, evening strolls and ramen bowls (luv). I find joy in anime, classic books, art and Genshin Impact(yes, really), while endlessly exploring new places, new tech and everything in between. Curiosity is kind of my thing.
+                  Manga pages, museum halls, evening strolls and ramen bowls (luv). I find joy in anime, classic books, art and Genshin Impact (yes, really), while endlessly exploring new places, new tech and everything in between. Curiosity is kind of my thing.
                 </li>
               </ul>
             </article>
