@@ -108,10 +108,10 @@ function Content() {
               <ul>
                 <li>
                   <sup>2025</sup>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.researchgate.net/publication/401668948_Adversarial_Attacks_on_Autonomous_Vehicles_A_Comprehensive_Review" target="_blank" rel="noopener noreferrer">
                     Adversarial Attacks on Autonomous Vehicles : A Comprehensive Review
                   </a>{' '}
-                  — Presented at ICAIT 2025; accepted for publication in GRENZE International Journal of Engineering and Technology (Scopus-indexed). Co-authored and presented a review paper synthesizing insights from 23+ research papers. Analyzed and categorized adversarial techniques and mapped them to real-world vulnerabilities in perception pipelines. [Link: TBA]
+                  — Presented at ICAIT 2025; accepted for publication in GRENZE International Journal of Engineering and Technology (Scopus-indexed). Co-authored and presented a review paper synthesizing insights from 23+ research papers. Analyzed and categorized adversarial techniques and mapped them to real-world vulnerabilities in perception pipelines.
                 </li>
                 <li className={styles.projectFocus}>
                   <img src={starIcon} alt="" className={styles.starIcon} />
