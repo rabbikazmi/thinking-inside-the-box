@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/thinking-inside-the-box/static/css/main.7aa1f017.css",
-    "main.js": "/thinking-inside-the-box/static/js/main.d22ce652.js",
+    "main.js": "/thinking-inside-the-box/static/js/main.ae010b16.js",
     "static/media/star-removebg-preview.png": "/thinking-inside-the-box/static/media/star-removebg-preview.41b06a0531e734c6afc1.png",
     "index.html": "/thinking-inside-the-box/index.html",
     "main.7aa1f017.css.map": "/thinking-inside-the-box/static/css/main.7aa1f017.css.map",
-    "main.d22ce652.js.map": "/thinking-inside-the-box/static/js/main.d22ce652.js.map"
+    "main.ae010b16.js.map": "/thinking-inside-the-box/static/js/main.ae010b16.js.map"
   },
   "entrypoints": [
     "static/css/main.7aa1f017.css",
-    "static/js/main.d22ce652.js"
+    "static/js/main.ae010b16.js"
   ]
 }
