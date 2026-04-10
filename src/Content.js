@@ -23,6 +23,20 @@ function Content() {
                 <li className={styles.projectItem}>
                   <div className={styles.projectTitle}>
                     <img src={starIcon} alt="" className={styles.starIcon} />
+                    <a href="https://github.com/rabbikazmi/content-moderation-openenv" target="_blank" rel="noopener noreferrer">
+                      TrustMod: Content Moderation OpenEnv
+                    </a>
+                  </div>
+                  <div className={styles.projectDesc}>
+                    A reinforcement-learning environment for intelligent, context-aware content moderation where agents classify user-generated content across safety categories with calibrated confidence and continuous learning.
+                  </div>
+                  <div className={styles.projectFocus}>
+                    Focus: reinforcement learning · AI safety · computational social science
+                  </div>
+                </li>
+                <li className={styles.projectItem}>
+                  <div className={styles.projectTitle}>
+                    <img src={starIcon} alt="" className={styles.starIcon} />
                     <a href="https://github.com/rabbikazmi/eleven11" target="_blank" rel="noopener noreferrer">
                       Eleven11
                     </a>
