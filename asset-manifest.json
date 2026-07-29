@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/thinking-inside-the-box/static/css/main.7aa1f017.css",
-    "main.js": "/thinking-inside-the-box/static/js/main.49857844.js",
-    "static/media/star-removebg-preview.png": "/thinking-inside-the-box/static/media/star-removebg-preview.41b06a0531e734c6afc1.png",
+    "main.css": "/thinking-inside-the-box/static/css/main.54e5457b.chunk.css",
+    "main.js": "/thinking-inside-the-box/static/js/main.f8f90fb1.chunk.js",
+    "main.js.map": "/thinking-inside-the-box/static/js/main.f8f90fb1.chunk.js.map",
+    "runtime-main.js": "/thinking-inside-the-box/static/js/runtime-main.ef4e2df6.js",
+    "runtime-main.js.map": "/thinking-inside-the-box/static/js/runtime-main.ef4e2df6.js.map",
+    "static/js/2.03db7eb8.chunk.js": "/thinking-inside-the-box/static/js/2.03db7eb8.chunk.js",
+    "static/js/2.03db7eb8.chunk.js.map": "/thinking-inside-the-box/static/js/2.03db7eb8.chunk.js.map",
     "index.html": "/thinking-inside-the-box/index.html",
-    "main.7aa1f017.css.map": "/thinking-inside-the-box/static/css/main.7aa1f017.css.map",
-    "main.49857844.js.map": "/thinking-inside-the-box/static/js/main.49857844.js.map"
+    "static/css/main.54e5457b.chunk.css.map": "/thinking-inside-the-box/static/css/main.54e5457b.chunk.css.map",
+    "static/js/2.03db7eb8.chunk.js.LICENSE.txt": "/thinking-inside-the-box/static/js/2.03db7eb8.chunk.js.LICENSE.txt",
+    "static/media/star-removebg-preview.41b06a05.png": "/thinking-inside-the-box/static/media/star-removebg-preview.41b06a05.png"
   },
   "entrypoints": [
-    "static/css/main.7aa1f017.css",
-    "static/js/main.49857844.js"
+    "static/js/runtime-main.ef4e2df6.js",
+    "static/js/2.03db7eb8.chunk.js",
+    "static/css/main.54e5457b.chunk.css",
+    "static/js/main.f8f90fb1.chunk.js"
   ]
 }
