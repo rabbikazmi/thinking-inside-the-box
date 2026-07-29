@@ -23,15 +23,15 @@ function Content() {
                 <li className={styles.projectItem}>
                   <div className={styles.projectTitle}>
                     <img src={starIcon} alt="" className={styles.starIcon} />
-                    <a href="https://github.com/rabbikazmi/content-moderation-openenv" target="_blank" rel="noopener noreferrer">
-                      TrustMod: Content Moderation OpenEnv
+                    <a href="https://github.com/ResearchDrafts/malicious-SQL-detector" target="_blank" rel="noopener noreferrer">
+                      Filtering Adversarial Payloads in Multilingual Text-to-SQL Systems
                     </a>
                   </div>
                   <div className={styles.projectDesc}>
-                    A reinforcement-learning environment for intelligent, context-aware content moderation where agents classify user-generated content across safety categories with calibrated confidence and continuous learning.
+                    A multilingual AI security pipeline using UniXcoder and LLM feature-fusion to detect adversarial SQL injection payloads across English, Hindi, and Hinglish prompts.
                   </div>
                   <div className={styles.projectFocus}>
-                    Focus: reinforcement learning · AI safety · computational social science
+                    Focus: AI security · Trustworthy AI · binary classfication 
                   </div>
                 </li>
                 <li className={styles.projectItem}>
@@ -48,34 +48,7 @@ function Content() {
                     Focus: custom model training · full-stack development · real-time inference
                   </div>
                 </li>
-                <li className={styles.projectItem}>
-                  <div className={styles.projectTitle}>
-                    <img src={starIcon} alt="" className={styles.starIcon} />
-                    <a href="https://github.com/rabbikazmi/embodied-vqa-rl" target="_blank" rel="noopener noreferrer">
-                      Embodied VQA-RL
-                    </a>
-                  </div>
-                  <div className={styles.projectDesc}>
-                    An autonomous agent that physically navigates a 3D environment to answer visual questions using deep Reinforcement Learning and YOLOv8.
-                  </div>
-                  <div className={styles.projectFocus}>
-                    Focus: embodied AI · reinforcement learning · computer vision
-                  </div>
-                </li>
-                <li className={styles.projectItem}>
-                  <div className={styles.projectTitle}>
-                    <img src={starIcon} alt="" className={styles.starIcon} />
-                    <a href="https://github.com/rabbikazmi/snapncook" target="_blank" rel="noopener noreferrer">
-                      SnapNCook
-                    </a>
-                  </div>
-                  <div className={styles.projectDesc}>
-                    AI-powered web app that turns a photo of your fridge into a full recipe. A custom-trained YOLOv11 model detects your ingredients, and Gemini API serves up smart dish suggestions, helping you cook smarter and waste less.
-                  </div>
-                  <div className={styles.projectFocus}>
-                    Focus: computer vision · API integration · user experience design
-                  </div>
-                </li>
+
                 <li className={styles.projectItem}>
                   <div className={styles.projectTitle}>
                     <img src={starIcon} alt="" className={styles.starIcon} />
